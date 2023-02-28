@@ -1,7 +1,7 @@
-#pragma once
+﻿#pragma once
 
 
-#include "third_private_config.h"
+#include "config.h"
 
 
 
