@@ -31,7 +31,7 @@
 extern "C" {
 #endif
 
-#include <JXRMeta.h>
+#include <jxr/jxrgluelib/JXRMeta.h>
 #include <guiddef.h>
 
 //================================================================
