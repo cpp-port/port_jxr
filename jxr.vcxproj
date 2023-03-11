@@ -272,7 +272,6 @@
     </Xdcmake>
     <Lib>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(RootParentDirOperatingSystem)$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -403,7 +402,6 @@
     <Lib />
     <Lib>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(RootParentDirOperatingSystem)$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Xdcmake>
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
