@@ -37,7 +37,7 @@
   <PropertyGroup Label="Globals">
     <ProjectName>_jxr</ProjectName>
     <ProjectGuid>{244455E0-5F25-4451-9540-F317883E52A8}</ProjectGuid>
-    <RootNamespace>third</RootNamespace>
+    <RootNamespace>jxr</RootNamespace>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -87,35 +87,35 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\operating-system\operating-system-windows\port.props" />
+    <Import Project="..\..\..\operating_system\operating_system-windows\port.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\operating-system\operating-system-windows\port.props" />
+    <Import Project="..\..\..\operating_system\operating_system-windows\port.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\operating-system\operating-system-windows\port.props" />
+    <Import Project="..\..\..\operating_system\operating_system-windows\port.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='StaticDebug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\operating-system\operating-system-windows\port.props" />
+    <Import Project="..\..\..\operating_system\operating_system-windows\port.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\operating-system\operating-system-windows\port.props" />
+    <Import Project="..\..\..\operating_system\operating_system-windows\port.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\operating-system\operating-system-windows\port.props" />
+    <Import Project="..\..\..\operating_system\operating_system-windows\port.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\operating-system\operating-system-windows\port.props" />
+    <Import Project="..\..\..\operating_system\operating_system-windows\port.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='StaticDebug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\operating-system\operating-system-windows\port.props" />
+    <Import Project="..\..\..\operating_system\operating_system-windows\port.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -158,12 +158,11 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ExceptionHandling>Async</ExceptionHandling>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../port/_;$(SolutionDir)../../../port/include;$(ProjectDir)/include/$(ProjectName);$(ProjectDir);$(SolutionDir)../../../port/_/$(ProjectName);$(SolutionDir)/../include;$(ProjectDir)/image/sys;$(ProjectDir)/jxrgluelib</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
     <Link>
@@ -175,7 +174,6 @@
     </Xdcmake>
     <Lib>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(RootParentDirOperatingSystem)$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticDebug|Win32'">
@@ -191,12 +189,11 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ExceptionHandling>Async</ExceptionHandling>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../port/_;$(SolutionDir)../../../port/include;$(ProjectDir)/include/$(ProjectName);$(ProjectDir);$(SolutionDir)../../../port/_/$(ProjectName);$(SolutionDir)/../include;$(ProjectDir)/image/sys;$(ProjectDir)/jxrgluelib</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
     <Link>
@@ -208,7 +205,6 @@
     </Xdcmake>
     <Lib>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(RootParentDirOperatingSystem)$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -227,11 +223,10 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ExceptionHandling>Async</ExceptionHandling>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../port/_;$(SolutionDir)../../../port/include;$(ProjectDir)/include/$(ProjectName);$(ProjectDir);$(SolutionDir)../../../port/_/$(ProjectName);$(SolutionDir)/../include;$(ProjectDir)/image/sys;$(ProjectDir)/jxrgluelib</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
     <Link>
@@ -262,11 +257,10 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ExceptionHandling>Async</ExceptionHandling>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../port/_;$(SolutionDir)../../../port/include;$(ProjectDir)/include/$(ProjectName);$(ProjectDir);$(SolutionDir)../../../port/_/$(ProjectName);$(SolutionDir)/../include;$(ProjectDir)/image/sys;$(ProjectDir)/jxrgluelib</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
     <Link>
@@ -294,11 +288,10 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../port/_;$(SolutionDir)../../../port/include;$(ProjectDir)/include/$(ProjectName);$(ProjectDir);$(SolutionDir)../../../port/_/$(ProjectName);$(SolutionDir)/../include;$(ProjectDir)/image/sys;$(ProjectDir)/jxrgluelib</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
     <Link>
@@ -310,7 +303,6 @@
     </Lib>
     <Lib>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(RootParentDirOperatingSystem)$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Xdcmake>
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
@@ -329,11 +321,10 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../port/_;$(SolutionDir)../../../port/include;$(ProjectDir)/include/$(ProjectName);$(ProjectDir);$(SolutionDir)../../../port/_/$(ProjectName);$(SolutionDir)/../include;$(ProjectDir)/image/sys;$(ProjectDir)/jxrgluelib</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
     <Link>
@@ -345,7 +336,6 @@
     </Lib>
     <Lib>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(RootParentDirOperatingSystem)$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Xdcmake>
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
@@ -366,11 +356,10 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../port/_;$(SolutionDir)../../../port/include;$(ProjectDir)/include/$(ProjectName);$(ProjectDir);$(SolutionDir)../../../port/_/$(ProjectName);$(SolutionDir)/../include;$(ProjectDir)/image/sys;$(ProjectDir)/jxrgluelib</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
     <Link>
@@ -401,11 +390,10 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../port/_;$(SolutionDir)../../../port/include;$(ProjectDir)/include/$(ProjectName);$(ProjectDir);$(SolutionDir)../../../port/_/$(ProjectName);$(SolutionDir)/../include;$(ProjectDir)/image/sys;$(ProjectDir)/jxrgluelib</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
     <Link>
@@ -463,6 +451,8 @@
     <ClInclude Include="common\include\wmspecstrings_adt.h" />
     <ClInclude Include="common\include\wmspecstrings_strict.h" />
     <ClInclude Include="common\include\wmspecstrings_undef.h" />
+    <ClInclude Include="include\jxr\jxrgluelib\JXRGlue.h" />
+    <ClInclude Include="include\jxr\jxrgluelib\JXRMeta.h" />
     <ClInclude Include="jxrgluelib\JXRGlue.h" />
     <ClInclude Include="jxrgluelib\JXRMeta.h" />
     <ClInclude Include="jxr_private.h" />

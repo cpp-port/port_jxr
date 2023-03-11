@@ -45,6 +45,24 @@
     <Filter Include="Header Files\jxrgluelib">
       <UniqueIdentifier>{e086763a-d4af-4f0d-8358-bdd8bea2c79f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\NewFilter1">
+      <UniqueIdentifier>{d1b28224-4148-4cde-bf5e-573ec55b9d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{af70f5c0-2397-4f96-b281-997a336c137d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\jxr">
+      <UniqueIdentifier>{f86ad07a-5114-4e30-bf34-af6af62c6205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\jxr\jxrgluelib">
+      <UniqueIdentifier>{a502fb89-8ee9-43c7-ab4f-22b2c5d56c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\jxr\image">
+      <UniqueIdentifier>{c7404a40-3b3a-4b17-8eca-01fc1dd6d888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\jxr\image\sys">
+      <UniqueIdentifier>{7fade728-cbb8-45f2-bc87-1b6886339b16}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="image\decode\decode.c">
@@ -174,6 +192,12 @@
     </ClInclude>
     <ClInclude Include="jxr_private.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jxr\jxrgluelib\JXRGlue.h">
+      <Filter>Header Files\include\jxr\jxrgluelib</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jxr\jxrgluelib\JXRMeta.h">
+      <Filter>Header Files\include\jxr\jxrgluelib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
