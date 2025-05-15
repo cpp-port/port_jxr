@@ -183,7 +183,7 @@ __inline int InlineIsEqualGUID(REFGUID rguid1, REFGUID rguid2)
 
 __inline int IsEqualGUID(REFGUID rguid1, REFGUID rguid2)
 {
-    return !memcmp_dup(&rguid1, &rguid2, sizeof(GUID));
+    return !memcmp(&rguid1, &rguid2, sizeof(GUID));
 }
 
 #else   // ! __cplusplus
