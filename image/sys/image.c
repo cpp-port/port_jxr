@@ -25,7 +25,7 @@
 // POSSIBILITY OF SUCH DAMAGE.
 //
 //*@@@---@@@@******************************************************************
-#include "jxr_private.h"
+
 #include "strcodec.h"
 // #include "xplatform_image.h"
 

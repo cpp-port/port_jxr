@@ -25,7 +25,7 @@
 // POSSIBILITY OF SUCH DAMAGE.
 //
 //*@@@---@@@@******************************************************************
-#include "jxr_private.h"
+
 #include "strcodec.h"
 
 #ifdef MEM_TRACE

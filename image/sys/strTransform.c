@@ -25,7 +25,7 @@
 // POSSIBILITY OF SUCH DAMAGE.
 //
 //*@@@---@@@@******************************************************************
-#include "jxr_private.h"
+
 #include "strTransform.h"
 
 /** need to swap b and c **/
