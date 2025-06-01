@@ -1,14 +1,14 @@
 //*@@@+++@@@@******************************************************************
 //
-// Copyright © Microsoft Corp.
+// Copyright ï¿½ Microsoft Corp.
 // All rights reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
 // 
-// • Redistributions of source code must retain the above copyright notice,
+// ï¿½ Redistributions of source code must retain the above copyright notice,
 //   this list of conditions and the following disclaimer.
-// • Redistributions in binary form must reproduce the above copyright notice,
+// ï¿½ Redistributions in binary form must reproduce the above copyright notice,
 //   this list of conditions and the following disclaimer in the documentation
 //   and/or other materials provided with the distribution.
 // 
@@ -34,6 +34,12 @@
 #define TRACE_NEW       0
 #define TRACE_HEAP      0
 #include "memtrace.h"
+#endif
+
+#ifdef __ANDROID__
+#include <byteswap.h>
+#define _byteswap_ulong(x) bswap_32(x)
+#define _byteswap_uint64(x) bswap_64(x)
 #endif
 
 extern const int dctIndex[3][16];

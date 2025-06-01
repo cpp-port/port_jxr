@@ -194,7 +194,7 @@ __inline int IsEqualGUID(REFGUID rguid1, REFGUID rguid2)
         ((unsigned long *) rguid1)[2] == ((unsigned long *) rguid2)[2] &&    \
         ((unsigned long *) rguid1)[3] == ((unsigned long *) rguid2)[3])
 
-#define IsEqualGUID(rguid1, rguid2) (!memcmp_dup(rguid1, rguid2, sizeof(GUID)))
+#define IsEqualGUID(rguid1, rguid2) (!memcmp(rguid1, rguid2, sizeof(GUID)))
 
 #endif  // __cplusplus
 
