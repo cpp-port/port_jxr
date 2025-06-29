@@ -26,7 +26,7 @@
 //
 //*@@@---@@@@******************************************************************
 
-#include "strcodec.h"
+#include "image/sys/strcodec.h"
 #include "decode.h"
 
 #ifdef MEM_TRACE
