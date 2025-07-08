@@ -1,14 +1,14 @@
 //*@@@+++@@@@******************************************************************
 //
-// Copyright © Microsoft Corp.
+// Copyright ï¿½ Microsoft Corp.
 // All rights reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
 // 
-// • Redistributions of source code must retain the above copyright notice,
+// ï¿½ Redistributions of source code must retain the above copyright notice,
 //   this list of conditions and the following disclaimer.
-// • Redistributions in binary form must reproduce the above copyright notice,
+// ï¿½ Redistributions in binary form must reproduce the above copyright notice,
 //   this list of conditions and the following disclaimer in the documentation
 //   and/or other materials provided with the distribution.
 // 
@@ -820,17 +820,28 @@ Void freeTileInfo(CWMImageStrCodec * pSC)
 
     if(pSC->WMISCP.sbSubband != SB_DC_ONLY)
         if((pSC->m_param.uQPMode & 2) != 0) // not LP uniform
-            for(iTile = 0; iTile <= pSC->WMISCP.cNumOfSliceMinus1V; iTile ++)
-                freeQuantizer(pSC->pTile[iTile].pQuantizerLP);
-        else
-            freeQuantizer(pSC->pTile[0].pQuantizerLP);
+        {
+           for (iTile = 0; iTile <= pSC->WMISCP.cNumOfSliceMinus1V; iTile++)
+           {
+              freeQuantizer(pSC->pTile[iTile].pQuantizerLP);
+
+           }
+        }
+        else {
+           freeQuantizer(pSC->pTile[0].pQuantizerLP);
+
+        }
 
     if(pSC->WMISCP.sbSubband != SB_DC_ONLY && pSC->WMISCP.sbSubband != SB_NO_HIGHPASS)
         if((pSC->m_param.uQPMode & 4) != 0) // not HP uniform
-            for(iTile = 0; iTile <= pSC->WMISCP.cNumOfSliceMinus1V; iTile ++)
-                freeQuantizer(pSC->pTile[iTile].pQuantizerHP);
-        else
-            freeQuantizer(pSC->pTile[0].pQuantizerHP);
+        {
+           for (iTile = 0; iTile <= pSC->WMISCP.cNumOfSliceMinus1V; iTile++) {
+              freeQuantizer(pSC->pTile[iTile].pQuantizerHP);
+           }
+        }
+        else {
+           freeQuantizer(pSC->pTile[0].pQuantizerHP);
+        }
 
     if(pSC->pTile != NULL)
         free(pSC->pTile);
