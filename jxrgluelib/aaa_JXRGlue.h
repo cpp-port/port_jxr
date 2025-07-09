@@ -26,10 +26,10 @@
 //
 //*@@@---@@@@******************************************************************
 #pragma once
-
-#ifdef __cplusplus
-extern "C" {
-#endif
+//
+// #ifdef __cplusplus
+// extern "C" {
+// #endif
 
 #include <JXR/jxrgluelib/JXRMeta.h>
 #include <guiddef.h>
@@ -629,8 +629,8 @@ ERR PKAlloc(void** ppv, size_t cb);
 ERR PKFree(void** ppv);
 ERR PKAllocAligned(void** ppv, size_t cb, size_t iAlign);
 ERR PKFreeAligned(void** ppv);
-
-#ifdef __cplusplus
-} // extern "C"
-#endif
-
+//
+// #ifdef __cplusplus
+// } // extern "C"
+// #endif
+//
