@@ -267,7 +267,7 @@ extern "C" {
 #define __out_validated(typ_sym)            __inner_out_validated(#typ_sym)
 #define __this_out_data_source(src_sym)     __inner_this_data_source(#src_sym)
 #define __this_out_validated(typ_sym)       __inner_this_out_validated(#typ_sym)
-#define formal)                  __post __inner_transfer(formal
+#define __transfer(formal)                  __post __inner_transfer(formal)
 #define __rpc_entry                         __inner_control_entrypoint(RPC)
 #define __kernel_entry                      __inner_control_entrypoint(UserToKernel)
 #define __gdi_entry                         __inner_control_entrypoint(GDI)

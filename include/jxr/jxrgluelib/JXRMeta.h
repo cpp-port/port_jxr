@@ -27,7 +27,7 @@
 //*@@@---@@@@******************************************************************
 #pragma once
 
-#include <JXR/image/sys/windowsmediaphoto.h>
+#include <jxr/image/sys/windowsmediaphoto.h>
 #if !defined(WIN32) || defined(__MINGW32__)
 #include <wmspecstring.h>
 #endif

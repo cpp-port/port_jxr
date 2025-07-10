@@ -31,8 +31,9 @@
 extern "C" {
 #endif
 
-#include <JXR/jxrgluelib/JXRMeta.h>
-#include <guiddef.h>
+#include <jxr/jxrgluelib/JXRMeta.h>
+#include <jxr/jxrgluelib/guiddef.h>
+
 
 //================================================================
 #define WMP_SDK_VERSION 0x0101
