@@ -17,7 +17,7 @@ list(APPEND library_source
         common/include/wmspecstrings_adt.h
         common/include/wmspecstrings_strict.h
         common/include/wmspecstrings_undef.h
-        common/guiddef.h
+        #common/guiddef.h
         common/wmsal.h
         common/wmspecstring.h
         common/wmspecstrings_adt.h

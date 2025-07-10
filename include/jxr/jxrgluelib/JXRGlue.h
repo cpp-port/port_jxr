@@ -27,12 +27,14 @@
 //*@@@---@@@@******************************************************************
 #pragma once
 
+#include <uuid.h>
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 #include <jxr/jxrgluelib/JXRMeta.h>
-#include <jxr/jxrgluelib/guiddef.h>
 
 
 //================================================================

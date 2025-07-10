@@ -27,7 +27,7 @@
 //*@@@---@@@@******************************************************************
 #include <stdlib.h>
 
-#include <JXR/jxrgluelib/JXRGlue.h>
+#include <jxr/jxrgluelib/JXRGlue.h>
 #include <math.h>
 
 //================================================================
