@@ -27,8 +27,8 @@
 //
 //*@@@---@@@@******************************************************************
 #include <limits.h>
-#include <jxr/jxrgluelib/JXRGlue.h>
-#ifdef __ANDROID__
+#include <port_jxr/jxrgluelib/JXRGlue.h>
+#if defined(__LINUX__) || defined(__ANDROID__)
 #include <wchar.h>
 #endif
 

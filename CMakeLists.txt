@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(jxr CXX)
+project(port_jxr CXX)
 
 
 if (MSVC)
@@ -11,18 +11,18 @@ endif ()
 
 
 list(APPEND library_source
-        common/include/guiddef.h
-        common/include/wmsal.h
-        common/include/wmspecstring.h
-        common/include/wmspecstrings_adt.h
-        common/include/wmspecstrings_strict.h
-        common/include/wmspecstrings_undef.h
+        include/port_jxr/guiddef.h
+        include/port_jxr/wmsal.h
+        include/port_jxr/wmspecstring.h
+        include/port_jxr/wmspecstrings_adt.h
+        include/port_jxr/wmspecstrings_strict.h
+        include/port_jxr/wmspecstrings_undef.h
         #common/guiddef.h
-        common/wmsal.h
-        common/wmspecstring.h
-        common/wmspecstrings_adt.h
-        common/wmspecstrings_strict.h
-        common/wmspecstrings_undef.h
+#        common/wmsal.h
+#        common/wmspecstring.h
+#        common/wmspecstrings_adt.h
+#        common/wmspecstrings_strict.h
+#        common/wmspecstrings_undef.h
         image/x86/x86.h
         image/sys/adapthuff.c
         image/sys/ansi.h
@@ -53,9 +53,9 @@ list(APPEND library_source
         image/decode/strPredQuantDec.c
         image/decode/postprocess.c
         image/decode/strInvTransform.c
-        include/jxr/image/sys/windowsmediaphoto.h
-        include/jxr/jxrgluelib/JXRGlue.h
-        include/jxr/jxrgluelib/JXRMeta.h
+        include/port_jxr/image/sys/windowsmediaphoto.h
+        include/port_jxr/jxrgluelib/JXRGlue.h
+        include/port_jxr/jxrgluelib/JXRMeta.h
         jxrgluelib/JXRGlue.c
         #jxrgluelib/JXRGlue.h
         jxrgluelib/JXRGlueJxr.c
@@ -90,12 +90,10 @@ endif()
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/..)
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../webp)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../jxr/common)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../jxr/image/sys)
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../port/include)
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include/FreeImage)
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../operating_system/operating_system-${OPERATING_SYSTEM_LOWERED_NAME}/configuration/FreeImage)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../operating_system/operating_system-${OPERATING_SYSTEM_LOWERED_NAME}/configuration/${PROJECT_NAME})
 
 
 

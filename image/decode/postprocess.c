@@ -26,7 +26,7 @@
 //
 //*@@@---@@@@******************************************************************
 
-#include "JXR/image/sys/windowsmediaphoto.h"
+#include "port_jxr/image/sys/windowsmediaphoto.h"
 #include "image/sys/strcodec.h"
 
 Void smoothMB(PixelI * p1, PixelI * p0, PixelI * q0, PixelI * q1)

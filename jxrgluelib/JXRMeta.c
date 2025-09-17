@@ -26,7 +26,7 @@
 //
 //*@@@---@@@@******************************************************************
 //#include "JXRMeta.h"
-#include "jxr/jxrgluelib/JXRGlue.h"
+#include "port_jxr/jxrgluelib/JXRGlue.h"
 
 
 

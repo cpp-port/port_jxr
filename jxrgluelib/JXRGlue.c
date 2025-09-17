@@ -29,7 +29,7 @@
 #include <ctype.h>
 
 #define INITGUID
-#include <jxr/jxrgluelib/JXRGlue.h>
+#include <port_jxr/jxrgluelib/JXRGlue.h>
 
 //================================================================
 const PKIID IID_PKImageScanEncode = 1;

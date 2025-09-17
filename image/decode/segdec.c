@@ -36,7 +36,7 @@
 #include "memtrace.h"
 #endif
 
-#ifdef __ANDROID__
+#if defined(__LINUX__) || defined(__ANDROID__)
 #include <byteswap.h>
 #define _byteswap_ulong(x) bswap_32(x)
 #define _byteswap_uint64(x) bswap_64(x)
