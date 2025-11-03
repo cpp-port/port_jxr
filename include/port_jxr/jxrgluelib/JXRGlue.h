@@ -27,7 +27,7 @@
 //*@@@---@@@@******************************************************************
 #pragma once
 
-#include <uuid.h>
+#include <port_jxr/uuid.h>
 
 
 #ifdef __cplusplus
