@@ -40,6 +40,15 @@
 #include <byteswap.h>
 #define _byteswap_ulong(x) bswap_32(x)
 #define _byteswap_uint64(x) bswap_64(x)
+#elif defined(__SUNOS__)
+static U32 jxr_byteswap_ulong(U32 value)
+{
+    return ((value & 0x000000ffU) << 24)
+         | ((value & 0x0000ff00U) << 8)
+         | ((value & 0x00ff0000U) >> 8)
+         | ((value & 0xff000000U) >> 24);
+}
+#define _byteswap_ulong(x) jxr_byteswap_ulong(x)
 #endif
 
 extern const int dctIndex[3][16];
