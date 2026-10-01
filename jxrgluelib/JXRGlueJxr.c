@@ -28,7 +28,7 @@
 //*@@@---@@@@******************************************************************
 #include <limits.h>
 #include <port_jxr/jxrgluelib/JXRGlue.h>
-#if defined(__LINUX__) || defined(__ANDROID__)
+#if defined(__LINUX__) || defined(__ANDROID__) || defined(__SUNOS__)
 #include <wchar.h>
 #endif
 
